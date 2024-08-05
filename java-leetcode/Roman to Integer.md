@@ -73,6 +73,8 @@ sum+=array[3]
 
 array[4] I "有"小於 array[5] V
 sum+= array[5]-array[4]
+也可以是 sum -= array[4]
+然後再sum+=array[5]
 
 length = 6
 i < i+1
