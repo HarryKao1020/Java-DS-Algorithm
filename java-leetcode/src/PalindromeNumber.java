@@ -7,26 +7,24 @@ public class PalindromeNumber {
 
     public static void  main(String[] args) {
         Solution s1 = new Solution();
-        System.out.println(s1.isPalindrome(2332));
+        System.out.println(s1.isPalindrome(2147483647));
     }
 }
 class Solution {
     public boolean isPalindrome(int x) {
-        String integerString = Integer.toString(x);
-        String[] parts = integerString.split("");
-        int left = 0;
-        int right = parts.length;
-
-        while (left<right){
-            if (parts[left] == parts[right]){
-                left+=1;
-                right-=1;
-
-            }else{
-                return false;
-            }
-            return true;
+        if(x<0){
+            return false;
         }
-        return false;
+        long targetNum=0;
+        long temp = x;
+        while (temp > 0){
+            int digit = (int)temp%10;
+            targetNum=targetNum*10+digit;
+            temp/=10;
+        }
+        return (targetNum==x);
+
+
+
     }
 }
