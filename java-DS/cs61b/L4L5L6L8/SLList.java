@@ -1,13 +1,22 @@
 package cs61b.L4L5L6L8;
 
 public class SLList {
-    public static class IntNode {
+//    public static class IntNode {
+//        public int item;
+//        public IntNode next;
+//
+//        public IntNode(int i ,IntNode n){
+//            item=i;
+//            next= n;
+//        }
+//    }
+
+    private static class IntNode{
         public int item;
         public IntNode next;
-
-        public IntNode(int i ,IntNode n){
-            item=i;
-            next= n;
+        public IntNode(int val , IntNode nextNode){
+            item = val;
+            next = nextNode;
         }
     }
     private IntNode first;
@@ -20,21 +29,6 @@ public class SLList {
     public SLList(){
         first = null;
         size=0;
-    }
-
-    public static void main(String[] args) {
-        /* Create a List of one integer */
-        SLList L = new SLList();
-        L.addFirst(14);
-        L.addFirst(65);
-        L.addLast(10);
-        L.addLast(20);
-        L.addLast(68);
-        L.addLast(30);
-        System.out.println(L.getFirst());
-        System.out.println(L.getLast());
-        System.out.println(L.size());
-        System.out.println("count:"+L.count());
     }
 
     public void addFirst(int x){
@@ -87,4 +81,19 @@ public class SLList {
 //        }
 //        return 1 + size(p.next);
 //    }
+
+    public static void main(String[] args) {
+        /* Create a List of one integer */
+        SLList L = new SLList();
+        L.addFirst(14);
+        L.addFirst(65);
+        L.addLast(10);
+        L.addLast(20);
+        L.addLast(68);
+        L.addLast(30);
+        System.out.println("first :"+L.getFirst());
+
+    }
+
+
 }
