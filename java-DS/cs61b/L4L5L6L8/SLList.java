@@ -1,5 +1,8 @@
 package cs61b.L4L5L6L8;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class SLList {
 //    public static class IntNode {
 //        public int item;
@@ -92,6 +95,7 @@ public class SLList {
         L.addLast(68);
         L.addLast(30);
         System.out.println("first :"+L.getFirst());
+        List<Integer> l1 = new LinkedList<>();
 
     }
 
