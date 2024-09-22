@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Array {
     public static void main(String[] args) {
@@ -10,6 +9,15 @@ public class Array {
 
         reverseArray(array);
         System.out.println("Reverse Array:"+Arrays.toString(array));
+
+        String[] message = {"hello","world","leetcode"};
+        HashMap<String , Integer> banned = new HashMap<>();
+        banned.put("a",1);
+
+        List<String> bannedWords = new LinkedList<>();
+        bannedWords.add("Leetcode");
+        System.out.print(bannedWords.contains("Leetcode"));
+
     }
 
     private static int findMax(int[] array) {

@@ -20,15 +20,19 @@ public class DogCompare implements OurComparable{
         this.size = size;
     }
 
+    // ** Return -1 if this dog is less than dog pointed at by 0, and so forth. */
     @Override
     public int compareTo(Object o) {
         DogCompare uddaDog = (DogCompare) o;
-        if(this.size < uddaDog.size){
-            return -1;
-        }else if(this.size == uddaDog.size){
-            return 0;
-        }
-        return 1;
+        return this.size - uddaDog.size;
+//        if(this.size < uddaDog.size){
+//            return -1;
+//        }else if(this.size == uddaDog.size){
+//            return 0;
+//        }
+//        return 1;
+
+
     }
 
 

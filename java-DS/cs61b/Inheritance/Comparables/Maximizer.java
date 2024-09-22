@@ -13,8 +13,15 @@ public class Maximizer {
     }
 
     public static void main(String[] args) {
-        DogCompare[] dogCompares = {new DogCompare("Elyse",3),new DogCompare("Sture",9),new DogCompare("Evan",2),new DogCompare("Seven",14)};
-        DogCompare maxDog = (DogCompare) Maximizer.max(dogCompares);
+        DogCompare dogCompare1 =  new DogCompare("Harry",25);
+        DogCompare dogCompare2 = new DogCompare("Mary",30);
+        System.out.println(dogCompare2.compareTo(dogCompare1));
+        DogCompare[] dogs = {new DogCompare("Harry",25),new DogCompare("Marry",30)};
+
+        DogCompare maxDog = (DogCompare) max(dogs);
         maxDog.bark();
+        System.out.println(maxDog);
+
+
     }
 }
