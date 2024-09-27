@@ -1,8 +1,6 @@
 package cs61b.L12;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 public class IterationTest {
     public static void main(String[] args) {
@@ -38,6 +36,10 @@ public class IterationTest {
         for(int i : aset){
             System.out.println(i);
         }
+
+        List<String> list1 = Arrays.asList("apple","banana","kiwi");
+        list1.set(1,"lemon");
+        System.out.println(list1);
 
     }
 }
