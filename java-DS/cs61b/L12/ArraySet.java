@@ -13,6 +13,7 @@ public class ArraySet<T> implements Iterable<T>{
         items = (T[]) new Object[100];
         size = 0;
     }
+    
 
     public boolean contains(T x){
         for(int i = 0 ; i< size ;i++){

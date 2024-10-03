@@ -1,6 +1,4 @@
-package Leetcode;
-
-import java.util.List;
+package Leetcode.LinkedList;
 
 public class MergeTwoSortedLists {
 

@@ -1,7 +1,4 @@
-package Leetcode;
-
-import java.util.Arrays;
-import java.util.List;
+package Leetcode.LinkedList;
 
 public class addTwoNumbersSolution {
     public addTwoNumbersSolution(){
