@@ -1,6 +1,7 @@
 package Leetcode;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class addTwoNumbersSolution {
@@ -60,7 +61,10 @@ public class addTwoNumbersSolution {
         ListNode l2 = new ListNode(5);
         l2.next = new ListNode(8);
         l2.next.next = new ListNode(3);
-
+//        LinkedList<Integer> ll1 = new LinkedList<>();
+//        ll1.add(1);
+//        ll1.add(2);
+//        ll1.add(3);
         addTwoNumbersSolution s1 = new addTwoNumbersSolution();
         ListNode result = s1.addTwoNumbers(l1,l2);
         System.out.println(result);
