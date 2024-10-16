@@ -3,9 +3,9 @@ package cs61b.DisjointSets;
 public class QuickFindDS implements DisjointSets{
     private int[] id;
 
-    public QuickFindDS(int N){
-        id = new int[N];
-        for(int i = 0;i<N ;i++){
+    public QuickFindDS(int n){
+        id = new int[n];
+        for(int i = 0;i<n ;i++){
             id[i] = i;
         }
     }
@@ -29,8 +29,11 @@ public class QuickFindDS implements DisjointSets{
 
     public static void main(String[] args) {
         QuickFindDS ds_1 = new QuickFindDS(5);
-        QuickFindDS ds_2 = new QuickFindDS(3);
-       
+        ds_1.connect(0,1);
+        ds_1.connect(1,2);
+        System.out.println(ds_1.isConnected(0,2));
+        ds_1.connect(30,20);
+        System.out.println(ds_1.isConnected(0,20));
 
     }
 

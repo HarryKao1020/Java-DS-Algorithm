@@ -12,6 +12,5 @@ public class QueueTest {
         queue.offer(40); // offer 如果queue滿了會拋出false
         System.out.println(queue.size());
         System.out.println(queue.peek());
-        System.out.println(queue.);
     }
 }
