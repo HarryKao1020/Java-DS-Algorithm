@@ -1,4 +1,4 @@
-package JavaBasicDS;
+package JavaBasicDS.StackAndQueue;
 
 import java.util.Stack;
 

@@ -1,6 +1,6 @@
 package cs61b.DisjointSets;
 
-public class QuickFindDS implements DisjointSets{
+public class QuickFindDS implements DisjoinSets{
     private int[] id;
 
     public QuickFindDS(int n){
