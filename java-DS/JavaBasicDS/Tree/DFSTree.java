@@ -20,9 +20,13 @@ public class DFSTree {
         dfs_inOrder(node.right);
     }
 
-    // 後序走訪:又
+    // 後序走訪:(左子樹 --> 右子樹 --> 根節點)
     public static void dfs_postOrder(TreeNode node){
+        if(node==null) return;
 
+        dfs_postOrder(node.left);
+        dfs_postOrder(node.right);
+        System.out.println(node.val + ' ');
     }
     public static void main(String[] args) {
         // 初始化二元樹
