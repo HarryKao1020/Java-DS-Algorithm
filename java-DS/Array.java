@@ -3,8 +3,9 @@ import java.util.*;
 public class Array {
     public static void main(String[] args) {
         int[] array = {1,2,3,4,5};
+        System.out.println(array[0]);
         System.out.println("Max value :" + findMax(array));
-
+        
         System.out.println("Min value :" + findMin(array));
 
         reverseArray(array);
@@ -49,5 +50,8 @@ public class Array {
             left++;
             right--;
         }
+
+
     }
+
 }

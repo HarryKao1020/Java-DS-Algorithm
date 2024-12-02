@@ -14,6 +14,15 @@ public class HashMapPractice {
 
         System.out.println("Current Size of HashMap:"+ student.size());
 
+        HashMap<String,String> map1 = new HashMap<>();
+        map1.put("{","}");
+        map1.put("[","]");
+
+        String aaa = "{}()";
+        System.out.println(aaa.toCharArray());
+
+
+
 
     }
 
