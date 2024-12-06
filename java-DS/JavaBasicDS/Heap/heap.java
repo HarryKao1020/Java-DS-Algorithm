@@ -24,6 +24,7 @@ public class heap {
         maxHeap.offer(7);
         maxHeap.offer(2);
 
+
         int peak = maxHeap.peek(); // 取出heap頂 (7,3,2,1)
         System.out.println("maxHeap peak: "+ maxHeap.peek());
         int size = maxHeap.size();
