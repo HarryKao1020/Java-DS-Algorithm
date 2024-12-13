@@ -1,5 +1,6 @@
 package JavaBasicDS.Heap;
 
+import javax.print.attribute.standard.NumberOfInterveningJobs;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -34,9 +35,21 @@ public class MyPriorityQueue {
         maxHeap.offer(2);
         // 取peak = 取最大值
         System.out.println("maxHeap peek:"+ maxHeap.peek());
-        while(!maxHeap.isEmpty()){
-            System.out.println(maxHeap.poll());
+
+//        while(!maxHeap.isEmpty()){
+//            System.out.println(maxHeap.poll());
+//        }
+
+        System.out.println("print out max Heap:");
+        Object[] maxArray = maxHeap.toArray();
+        for(Object num: maxArray){
+            System.out.println(num);
         }
+        //       13
+        //      /  \
+        //     8    1
+        //    / \
+        //   3   2
 
 
 
