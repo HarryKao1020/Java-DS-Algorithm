@@ -10,6 +10,7 @@ public class Hash_Map {
         studentMap.put(10001,"Marry");
         studentMap.put(10002,"Jerry");
         studentMap.put(10003,"John");
+
         System.out.println(studentMap.get(10003));
         System.out.println(studentMap.remove(10003));
         System.out.println(studentMap.entrySet());
